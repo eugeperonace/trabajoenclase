@@ -8,20 +8,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int utn_getNumeroFlotante(int* pResultado,char* mensaje,char* mensajeError,float minimo,float maximo,int reintentos)
+int utn_getNumero(int* pResultado,char* mensaje,char* mensajeError,int minimo,int maximo,int reintentos)
 {
 	int retorno = -1;
-	float bufferFloat;
+	int bufferInt;
 
 	if(pResultado != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && reintentos >= 0)
 	{
 		do
 		{
 			printf("%s", mensaje);
-			scanf("%f", &bufferFloat);
-			if(bufferFloat <= minimo && bufferFloat >= maximo)
+			scanf("%d", &bufferInt);
+			if(bufferInt <= minimo && bufferInt >= maximo)
 			{
-				*pResultado = bufferFloat;
+				*pResultado = bufferInt;
 				return 0;
 				break;
 			}
@@ -34,5 +34,6 @@ int utn_getNumeroFlotante(int* pResultado,char* mensaje,char* mensajeError,float
 	}
 	return retorno;
 } // CIERRE DE LA FUNCION
+
 
 

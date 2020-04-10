@@ -27,7 +27,7 @@ int main(void)
 	}
 	else
 	{
-		printf("ERROR");
+		printf("\nERROR");
 	}
 
 	respuesta = utn_getNumero(&peso,"Peso?\n","Error peso debe ser desde 0 a 500\n",0,500,3);
@@ -39,5 +39,6 @@ int main(void)
 	{
 		printf("ERROR");
 	}
+
 	return EXIT_SUCCESS;
 }

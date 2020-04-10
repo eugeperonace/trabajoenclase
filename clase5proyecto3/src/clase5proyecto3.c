@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : clase4proyecto4.c
+ Name        : clase5proyecto3.c
  Author      : Eugenia
  Version     :
  Copyright   : Your copyright notice
@@ -8,26 +8,13 @@
  ============================================================================
  */
 
-//PARA QUE LA FUNCIÓN ME DEVUELVA UNA LETRA
+// EJERCICIO: Hacer una funcion que calcule el promedio de los valores
+// del array que recibe y me devuelva el promedio.
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "utn.h"
 
-int main(void)
-{
-	char letra;
-	int respuesta;
-
-	respuesta = utn_getCaracter(&letra,"Letra?\n","Error la letra debe ser desde A a M\n",'A','M',1);
-	if(respuesta == 0)
-	{
-		printf("\nLa letra es %c",letra);
-	}
-	else
-	{
-		printf("\nERROR");
-	}
-
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
 }
